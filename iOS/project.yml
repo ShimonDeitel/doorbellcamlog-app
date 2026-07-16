@@ -13,8 +13,8 @@ targets:
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - path: Sources
-      - path: Resources
+      - path: DoorbellCamLog/Sources
+      - path: DoorbellCamLog/Resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.shimondeitel.doorbellcamlog
@@ -28,6 +28,7 @@ targets:
         SWIFT_VERSION: "5.0"
         GENERATE_INFOPLIST_FILE: YES
     info:
+      path: DoorbellCamLog/Info.plist
       properties:
         UILaunchScreen: {}
         NSFaceIDUsageDescription: "Used to lock sensitive entries."
@@ -36,7 +37,7 @@ targets:
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - path: Tests
+      - path: DoorbellCamLog/Tests
     dependencies:
       - target: DoorbellCamLog
     settings:
@@ -47,7 +48,7 @@ targets:
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - path: UITests
+      - path: DoorbellCamLog/UITests
     dependencies:
       - target: DoorbellCamLog
     settings:
